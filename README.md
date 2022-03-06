@@ -35,5 +35,5 @@ python ADCreator.py
 - cleardb - Clears the database and sets the schema properly
 - clear_and_generate - Connects to the database, clears the DB, sets the schema, and generates random data
 - setmodel- Set the AD model(Single/Multiple)
-- setSecurity_level - Set the security level(High/Medium/Low) for the AD
+- setSecurity_level - Set the security level(High/Medium/Low) for the AD, default 'High' for single domain and 'High','Medium','Low' for each child domain respectively 
 - exit - Exits the script
