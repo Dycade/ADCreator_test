@@ -23,16 +23,17 @@ pip install -r requirements.txt
 Ensure that all files in this repo are in the same directory.
 
 ```
-python DBCreator.py
+python ADCreator.py
 ```
 
 ## Commands
 
 - dbconfig - Set the credentials and URL for the database you're connecting too
 - connect - Connects to the database using supplied credentials
-- setnodes - Set the number of nodes to generate (defaults to 500, this is a safe number!)
+- setnodes - Set the number of nodes in each domain to generate (defaults to 500, this is a safe number!)
 - setdomain - Set the domain name
 - cleardb - Clears the database and sets the schema properly
-- generate - Generates random data in the database
 - clear_and_generate - Connects to the database, clears the DB, sets the schema, and generates random data
+- setmodel- Set the AD model(Single/Multiple)
+- setSecurity_level - Set the security level(High/Medium/Low) for the AD
 - exit - Exits the script
