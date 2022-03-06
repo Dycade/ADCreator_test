@@ -1,5 +1,4 @@
 import random
-from re import I
 from neo4j import GraphDatabase
 from py2neo import Graph
 import cmd
