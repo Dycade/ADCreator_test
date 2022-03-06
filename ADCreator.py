@@ -37,8 +37,8 @@ class MainMenu(cmd.Cmd):
         self.password = "neo4j"
         self.driver = None
         self.model = None
-        self.Security_level = 'High'
-        self.num_nodes = 500
+        self.Security_level = None
+        self.num_nodes = None
         self.domain = "TESTLAB"
         self.base_sid = "S-1-5-21-883232822-274137685-4173207990"
         self.Country = "US"
@@ -241,8 +241,9 @@ class MainMenu(cmd.Cmd):
         if self.model == 'Multiple':
             self.num_nodes = [500,500,500]
             self.Security_level = ['High','Medium','Low']
-
-
+        else:
+            self.num_nodes = 500
+            self.Security_level = 'High'
         
     def generate_multipleAD(self):
         print ("Generateing the root domain")
