@@ -291,14 +291,16 @@ class MainMenu(cmd.Cmd):
                 overseas_country = random.choice(possible_country)
                 for user in overseas_users[i]:
                     for pc in overseas_PCs[overseas_country]:
-                        session.run(
-                            'MERGE (n:User {name:$uname}) MERGE (m:Computer {name:$pcname}) WITH n,m MERGE (m)-[:HasSession]->(n)', uname=user,pcname = pc)
+                        if random.choice([True, False]):
+                            session.run(
+                                'MERGE (n:User {name:$uname}) MERGE (m:Computer {name:$pcname}) WITH n,m MERGE (m)-[:HasSession]->(n)', uname=user,pcname = pc)
             else:
                 for user in overseas_users[i]:
                     for overseas_country in possible_country:
                         for pc in overseas_PCs[overseas_country]:
-                            session.run(
-                                'MERGE (n:User {name:$uname}) MERGE (m:Computer {name:$pcname}) WITH n,m MERGE (m)-[:HasSession]->(n)', uname=user,pcname = pc)
+                            if random.choice([True, False]):
+                                session.run(
+                                    'MERGE (n:User {name:$uname}) MERGE (m:Computer {name:$pcname}) WITH n,m MERGE (m)-[:HasSession]->(n)', uname=user,pcname = pc)
                         
 
 
