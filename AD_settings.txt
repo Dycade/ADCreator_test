@@ -1,6 +1,6 @@
 url =bolt://localhost:7687
 username = neo4j
-password = mima:789
+password = password
 model = Single
 Security_level = Low
 domain = TESTLAB
