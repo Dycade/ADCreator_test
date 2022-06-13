@@ -4,19 +4,16 @@ This python script will generate a relastics active directory graph.
 
 ## Requirements
 
-This script requires Python 3.7+, as well as the neo4j-driver. The script will only work with BloodHound 3.0.0 and above.
+This script requires Python 3.7+, python Faker package as well as the neo4j-driver. The script will only work with BloodHound 3.0.0 and above.
 
 The Neo4j Driver can be installed using pip:
 
 ```
 pip install neo4j-driver
+pip install Faker
 ```
 
-or
 
-```
-pip install -r requirements.txt
-```
 
 ## Running
 
