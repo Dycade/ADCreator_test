@@ -10,8 +10,13 @@ The Neo4j Driver can be installed using pip:
 
 ```
 pip install neo4j-driver
+```
+The Faker package can be installed using pip:
+
+```
 pip install Faker
 ```
+
 
 
 
