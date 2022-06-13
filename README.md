@@ -29,7 +29,7 @@ python main.py
 
 ## AD_settings
 
-- url - Set the credentials and URL for the database you're connecting too
+- url - Set the credentials and URL for the database you're connecting to
 - model  - Set the AD model(Single/Multiple)
 - Security_level  - Set the security level(High/Medium/Low) for the AD
 - domain  - the domain name
