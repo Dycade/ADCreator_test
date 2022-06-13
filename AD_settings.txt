@@ -6,5 +6,5 @@ Security_level = High
 domain = TESTLAB
 Country = en_US
 States = BFC,NOR,GES,PAC,NAQ,OCC,IDF,PDL
-num_PCs = 615
-num_users = 360
+num_PCs = 1000
+num_users = 1000
