@@ -1,6 +1,6 @@
 # BloodHound Database Creator
 
-This python script will generate a randomized data set for testing BloodHound features and analysis.
+This python script will generate a relastics active directory graph.
 
 ## Requirements
 
@@ -21,19 +21,19 @@ pip install -r requirements.txt
 ## Running
 
 Ensure that all files in this repo are in the same directory.
+Change the varible in AD_settings file
 
 ```
-python ADCreator.py
+python main.py
 ```
 
-## Commands
+## AD_settings
 
-- dbconfig - Set the credentials and URL for the database you're connecting too
-- connect - Connects to the database using supplied credentials
-- setnodes - Set the number of nodes in each domain to generate (defaults to 500, this is a safe number!)
-- setdomain - Set the domain name
-- cleardb - Clears the database and sets the schema properly
-- clear_and_generate - Connects to the database, clears the DB, sets the schema, and generates random data
-- setmodel- Set the AD model(Single/Multiple)
-- setSecurity_level - Set the security level(High/Medium/Low) for the AD, default 'High' for single domain and 'High','Medium','Low' for each child domain respectively 
-- exit - Exits the script
+- url - Set the credentials and URL for the database you're connecting too
+- model  - Set the AD model(Single/Multiple)
+- Security_level  - Set the security level(High/Medium/Low) for the AD
+- domain  - the domain name
+- Country - the country which the domain located
+- States  - the states of the country
+- num_PCs  - number of PC nodes
+- num_users   - number of User nodes
