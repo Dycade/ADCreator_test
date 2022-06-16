@@ -665,7 +665,7 @@ with driver.session() as session:
         query = session.run('MATCH(n:Group)-[:MemberOf]->(o:Group{name:$uname}) RETURN n.name',uname = cn(dept+'_'+'dist', domain)).data()
         dist_group = [list(i.values())[0] for i in query]
         possible_dist = random.choices(dist_group)
-        query = session.run('MATCH(n:Group)-[:Contains]->(o:Group{name:$uname}) RETURN n.name',uname = cn(dept+'_'+'sec', domain)).data()
+        query = session.run('MATCH(n:Group)-[:MemberOf]->(o:Group{name:$uname}) RETURN n.name',uname = cn(dept+'_'+'sec', domain)).data()
         sec_group = [list(i.values())[0] for i in query]
         possible_groups = possible_dist + random.sample(sec_group,random.randint(0, len(sec_group)))
         for group in possible_groups:
