@@ -554,13 +554,13 @@ with driver.session() as session:
         Delegatable_weight = ["False"] * 85 + ["True"] * 15
         PC_type = random.choices(PC_list)[0]
         if PC_type == 'PAW':
-            comp_name = str('PAW')+"-{:05d}.{}".format(len(PAW), domain)
+            comp_name = str('PAW')+"-{:05d}@{}".format(len(PAW), domain)
             PAW.append(comp_name)
         elif PC_type == 'Server':
-            comp_name = str('S')+"-{:05d}.{}".format(len(Server), domain)
+            comp_name = str('S')+"-{:05d}@{}".format(len(Server), domain)
             Server.append(comp_name)
         else:
-            comp_name = str('WS')+"-{:05d}.{}".format(len(Workingstation), domain)
+            comp_name = str('WS')+"-{:05d}@{}".format(len(Workingstation), domain)
             Workingstation.append(comp_name)
         enabled = True
         Delegatable = random.choice(Delegatable_weight)
