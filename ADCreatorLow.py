@@ -89,7 +89,7 @@ username = setting_dict['username']
 password = setting_dict['password']
 domain = str(setting_dict['domain'])+".LOCAL"
 base_sid = 'S-1-5-21-987213679-315867604-3049297612'
-states = setting_dict['States']
+states =  [elt.strip() for elt in setting_dict['States'].split(',')]
 country = setting_dict['Country']
 level = setting_dict['Security_level'] 
 driver = GraphDatabase.driver(url, auth=(username,password))
