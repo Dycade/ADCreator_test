@@ -250,7 +250,7 @@ if __name__ == '__main__':
         print ("Generateing the "+ str(i+1) + " child domain")
         Security_level = random.choice(['High','Medium','Low'])
         country = Countries[i]
-        domain = country+".LOCAL"
+        domain = Faker(country).country()+".LOCAL"
         states = [Faker(country).country_code() for _ in range(random.randint(3, 6))]
         last_sid = random.randint(1000000000,9999999999)
         root_sid = 'S-1-5-21-' + str(random.randint(100000000,999999999))+'-'+str(random.randint(100000000,999999999))
