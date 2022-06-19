@@ -83,7 +83,7 @@ password = setting_dict['password']
 domain = str(setting_dict['domain'])+".LOCAL"
 base_sid = 'S-1-5-21-987213679-315867604-3049297612'
 country = setting_dict['Country']
-states =  [Faker(country).province_abbr() for _ in range(random.randint(3, 6))]
+states =  [Faker(country).country_code() for _ in range(random.randint(3, 6))]
 level = setting_dict['Security_level'] 
 driver = GraphDatabase.driver(url, auth=(username,password))
 num_users = int(setting_dict['num_users'])
