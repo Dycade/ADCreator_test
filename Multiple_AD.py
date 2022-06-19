@@ -251,7 +251,7 @@ if __name__ == '__main__':
         Security_level = random.choice(['High','Medium','Low'])
         country = Countries[i]
         domain = Faker(country).country()+".LOCAL"
-        states = [Faker(country).country_code() for _ in range(random.randint(3, 6))]
+        states = [Faker(country).unique.country_code() for _ in range(random.randint(3, 6))]
         last_sid = random.randint(1000000000,9999999999)
         root_sid = 'S-1-5-21-' + str(random.randint(100000000,999999999))+'-'+str(random.randint(100000000,999999999))
         if Security_level == 'Low':
