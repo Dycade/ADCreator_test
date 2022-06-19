@@ -36,6 +36,5 @@ python main.py
 - Security_level  - Set the security level(High/Medium/Low) for the AD
 - domain  - the domain name
 - Country - the country which the domain located such as it_IT, en_US, ja_JP more options refer to https://faker.readthedocs.io/en/master/
-- States  - the states of the country
 - num_PCs  - number of PC nodes
 - num_users   - number of User nodes
