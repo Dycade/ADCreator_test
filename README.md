@@ -39,4 +39,4 @@ python main.py
 - num_PCs  - number of PC nodes
 - num_users   - number of User nodes
 -num_child_domain - for Multiple domain model, the number of child doiains
--Users_can_ login_overseas_computers = Some user will has connect to the pc in other domain if this is set to Y
+-Users_can_ login_overseas_computers - Some user will has connect to the pc in other domain if this is set to Y
