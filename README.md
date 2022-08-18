@@ -38,3 +38,5 @@ python main.py
 - Country - the country which the domain located such as it_IT, en_US, ja_JP more options refer to https://faker.readthedocs.io/en/master/
 - num_PCs  - number of PC nodes
 - num_users   - number of User nodes
+-num_child_domain - for Multiple domain model, the number of child doiains
+-Users_can_ login_overseas_computers = Some user will has connect to the pc in other domain if this is set to Y
