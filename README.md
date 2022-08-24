@@ -1,6 +1,6 @@
 # BloodHound Database Creator
 
-This python script will generate a relastics active directory graph.
+ADCreator is based on the code of the DBCreator https://github.com/BloodHoundAD/BloodHound-Tools/tree/master/DBCreator, and we add more freedom to the user to customes the AD graph they want to generate and the Aactive directory is fllowing the microsoft best pratices.
 
 ## Requirements
 
